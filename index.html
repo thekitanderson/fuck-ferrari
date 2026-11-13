@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuck Ferrari</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; background: #0A0A0A; }
+  .frame {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    background: #0A0A0A;
+  }
+  .frame img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    left: 5vw;
+    bottom: 5vw;
+    right: 5vw;
+    text-align: left;
+    color: #F0EBE0;
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
+    font-size: clamp(2.5rem, 9vw, 9rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<main class="frame">
+  <!-- Drop image at /hero.jpg; background stays black until then -->
+  <img src="hero.jpg" alt="" onerror="this.remove()">
+  <h1>Fuck Ferrari</h1>
+</main>
+</body>
+</html>
